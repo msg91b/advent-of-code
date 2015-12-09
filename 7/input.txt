@@ -1,3 +1,4 @@
+1 -> zz
 af AND ah -> ai
 NOT lk -> ll
 hz RSHIFT 1 -> is
@@ -13,7 +14,7 @@ NOT ag -> ah
 v OR w -> x
 g AND i -> j
 an LSHIFT 15 -> ar
-1 AND cx -> cy
+zz AND cx -> cy
 jq AND jw -> jy
 iu RSHIFT 5 -> ix
 gl AND gm -> go
@@ -49,7 +50,7 @@ hg OR hh -> hi
 lc LSHIFT 1 -> lw
 km OR kn -> ko
 eq LSHIFT 1 -> fk
-1 AND am -> an
+zz AND am -> an
 gj RSHIFT 1 -> hc
 aj AND al -> am
 gj AND gu -> gw
@@ -73,7 +74,7 @@ ki OR kj -> kk
 NOT ak -> al
 ld OR le -> lf
 ci RSHIFT 3 -> ck
-1 AND cc -> cd
+zz AND cc -> cd
 NOT kx -> ky
 fp OR fv -> fw
 ev AND ew -> ey
@@ -124,7 +125,7 @@ NOT hr -> hs
 NOT bs -> bt
 lf RSHIFT 3 -> lh
 au AND av -> ax
-1 AND gd -> ge
+zz AND gd -> ge
 jr OR js -> jt
 fw AND fy -> fz
 NOT iz -> ja
@@ -132,7 +133,7 @@ c LSHIFT 1 -> t
 dy RSHIFT 5 -> eb
 bp OR bq -> br
 NOT h -> i
-1 AND ds -> dt
+zz AND ds -> dt
 ab AND ad -> ae
 ap LSHIFT 1 -> bj
 br AND bt -> bu
@@ -149,7 +150,7 @@ jp OR ka -> kb
 lw OR lv -> lx
 iy AND ja -> jb
 dy OR ej -> ek
-1 AND bh -> bi
+zz AND bh -> bi
 NOT kt -> ku
 ao OR an -> ap
 ia AND ig -> ii
@@ -170,7 +171,7 @@ NOT gb -> gc
 ir LSHIFT 1 -> jl
 x AND ai -> ak
 he RSHIFT 5 -> hh
-1 AND lu -> lv
+zz AND lu -> lv
 NOT ft -> fu
 gh OR gi -> gj
 lf RSHIFT 5 -> li
@@ -193,8 +194,8 @@ jm LSHIFT 1 -> kg
 ih AND ij -> ik
 fo RSHIFT 3 -> fq
 fo RSHIFT 5 -> fr
-1 AND fi -> fj
-1 AND kz -> la
+zz AND fi -> fj
+zz AND kz -> la
 iu AND jf -> jh
 cq AND cs -> ct
 dv LSHIFT 1 -> ep
@@ -221,7 +222,7 @@ ia OR ig -> ih
 gv AND gx -> gy
 et AND fe -> fg
 lh AND li -> lk
-1 AND io -> ip
+zz AND io -> ip
 kb AND kd -> ke
 kk RSHIFT 5 -> kn
 id AND if -> ig
@@ -231,7 +232,7 @@ dd AND do -> dq
 lf AND lq -> ls
 NOT kc -> kd
 dy AND ej -> el
-1 AND ke -> kf
+zz AND ke -> kf
 et OR fe -> ff
 hz RSHIFT 5 -> ic
 dd OR do -> dp
@@ -254,7 +255,7 @@ il AND in -> io
 NOT eh -> ei
 gz LSHIFT 15 -> hd
 gk AND gq -> gs
-1 AND en -> eo
+zz AND en -> eo
 NOT kp -> kq
 et RSHIFT 5 -> ew
 lj AND ll -> lm
@@ -265,8 +266,8 @@ cu AND cw -> cx
 jx AND jz -> ka
 b OR n -> o
 be AND bg -> bh
-1 AND ht -> hu
-1 AND gy -> gz
+zz AND ht -> hu
+zz AND gy -> gz
 NOT hn -> ho
 ck OR cl -> cm
 ec AND ee -> ef
@@ -274,7 +275,7 @@ lv LSHIFT 15 -> lz
 ks AND ku -> kv
 NOT ie -> if
 hf AND hl -> hn
-1 AND r -> s
+zz AND r -> s
 ib AND ic -> ie
 hq AND hs -> ht
 y AND ae -> ag
@@ -318,7 +319,7 @@ jc AND je -> jf
 lb OR la -> lc
 NOT cn -> co
 kh LSHIFT 1 -> lb
-1 AND jj -> jk
+zz AND jj -> jk
 y OR ae -> af
 ck AND cl -> cn
 kk OR kv -> kw
