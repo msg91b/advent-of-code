@@ -14,8 +14,8 @@ struct values {
 	string output;
 };
 
-void parse(map<string, uint16_t>& matches, vector<values>& myValues, int& index) {
-	string s, temp;
+void parse(string s, map<string, uint16_t>& matches, vector<values>& myValues, int& index) {
+	string  temp;
 	istringstream ss(s);
 	values operation;
 
@@ -38,11 +38,13 @@ void parse(map<string, uint16_t>& matches, vector<values>& myValues, int& index)
 		if (temp == "->") {
 			getline(ss, temp);
 			operation.output = temp;
+			if (operation.output == "b") { // comment out for Part 1
+				operation.v1 = "956";
+			}
 			myValues.push_back(operation);
 
 			if (myValues.at(index).v1 != "lx")
 				matches[myValues.at(index).output] = stoi(myValues.at(index).v1);
-
 		}
 
 		else {
@@ -77,11 +79,7 @@ void ao(map<string, uint16_t>& matches, vector<values>& myValues) {
 	for (auto const& x : matches) {
 		for (auto const& y : matches) {
 			for (auto &i : myValues) {
-				if (i.v1 == "1") {
-					uint16_t one = stoi(i.v1);
-					matches[i.output] = 1 & y.second;
-				}
-				else if ((i.v1 == x.first && i.v2 == y.first) || (i.v2 == x.first && i.v1 == y.first)) {
+				if ((i.v1 == x.first && i.v2 == y.first) || (i.v2 == x.first && i.v1 == y.first)) {
 					if (i.command == "AND")
 						matches[i.output] = x.second & y.second;
 					if (i.command == "OR")
@@ -104,6 +102,16 @@ void not(map<string, uint16_t>& matches, vector<values>& myValues) {
 	}
 }
 
+void as(map<string, uint16_t>& matches, vector<values>& myValues) {
+	for (auto &i : myValues) {
+		for (auto const& x : matches) {
+			if (i.command == "" && i.v2 == "" && i.v1 == x.first) {
+				matches[i.output] = x.second;
+			}
+		}
+	}
+}
+
 int main() {
 	string s;
 	int index(0);
@@ -113,21 +121,14 @@ int main() {
 	vector<values> myValues;
 
 	while (getline(input, s)) {
-		parse(matches, myValues, index);
+		parse(s, matches, myValues, index);
 	}
-
 	while (matches["a"] == 0) {
 		shift(matches, myValues);
 		ao(matches, myValues);
 		not(matches, myValues);
+		as(matches, myValues);
 	}
-
-
-
-	// print all matches
-	/*for (auto const& x : matches) {
-	output << x.first << ':' << x.second << endl;
-	}*/
 
 	cout << matches["a"] << endl;
 
